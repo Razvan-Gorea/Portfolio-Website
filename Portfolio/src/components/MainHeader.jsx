@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from "react";
 
 function MainHeader() {
   const [isVisible, setIsVisible] = useState(false);
@@ -27,12 +27,10 @@ function MainHeader() {
 
   return (
     <>
-      <div 
+      <div
         ref={ref}
-        className={`flex flex-col items-center pt-40 px-4 transition-all duration-1000 ease-out ${
-          isVisible 
-            ? 'opacity-100 translate-y-0' 
-            : 'opacity-0 translate-y-8'
+        className={`flex flex-col items-center pt-40 px-4 transition-all duration-2000 ease-out ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >
         <p className="text-white text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-4">

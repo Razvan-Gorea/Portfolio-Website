@@ -13,3 +13,7 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
+
+setTimeout(() => {
+  document.getElementById('root').classList.add('loaded')
+}, 100)
