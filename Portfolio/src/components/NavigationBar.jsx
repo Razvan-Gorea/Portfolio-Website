@@ -11,19 +11,19 @@ function NavigationBar() {
             <div className="flex space-x-4 sm:space-x-5 md:space-x-6">
               <a
                 href="#top"
-                className="text-gray-700 hover:text-blue-900 transition-colors p-2 rounded-lg hover:bg-gray-50"
+                className="text-black hover:text-slate-400 transition-colors p-2 rounded-lg hover:bg-gray-50"
               >
                 <FiHome className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
               </a>
               <a
                 href="https://github.com/Razvan-Gorea"
-                className="text-gray-700 hover:text-blue-900 transition-colors p-2 rounded-lg hover:bg-gray-50"
+                className="text-black hover:text-slate-400 transition-colors p-2 rounded-lg hover:bg-gray-50"
               >
                 <RiGithubLine className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
               </a>
               <a
                 href="https://www.linkedin.com/in/razvan-gorea-2a7219296/"
-                className="text-gray-700 hover:text-blue-900 transition-colors p-2 rounded-lg hover:bg-gray-50"
+                className="text-black hover:text-slate-400 transition-colors p-2 rounded-lg hover:bg-gray-50"
               >
                 <LuLinkedin className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
               </a>
