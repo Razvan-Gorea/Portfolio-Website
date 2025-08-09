@@ -3,6 +3,7 @@ import NavigationBar from "./components/NavigationBar";
 import MainHeader from "./components/MainHeader";
 import About from "./components/About";
 import Education from "./components/Education";
+import Technologies from "./components/Technologies";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <MainHeader />
         <About />
         <Education />
+        <Technologies />
       </div>
     </>
   );

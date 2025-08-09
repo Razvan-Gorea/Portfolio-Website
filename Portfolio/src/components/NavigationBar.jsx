@@ -10,7 +10,7 @@ function NavigationBar() {
           <div className="flex justify-center items-center py-3 sm:py-4">
             <div className="flex space-x-4 sm:space-x-5 md:space-x-6">
               <a
-                href="#top"
+                href="/"
                 className="text-black hover:text-slate-400 transition-colors p-2 rounded-lg hover:bg-gray-50"
               >
                 <FiHome className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
