@@ -30,7 +30,7 @@ function Technologies() {
         }`}
       >
         <p className="text-black text-3xl text-center mb-4 font-bold">Skills</p>
-        <div className="flex flex-wrap gap-3 justify-center mb-20">
+        <div className="flex flex-wrap gap-3 justify-center mb-40">
           {skills.map((skill) => {
             const IconComponent = skill.icon;
             return (

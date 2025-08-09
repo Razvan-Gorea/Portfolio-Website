@@ -40,10 +40,10 @@ function MainHeader() {
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
       }`}
     >
-      <p className="text-black text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-4">
+      <p className="text-black text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-4">
         {nameText}{!nameComplete && <span className="animate-pulse">|</span>}
       </p>
-      <p className="text-black text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-170">
+      <p className="text-black text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-170">
         {typewriterText}{nameComplete && <span className="animate-pulse">|</span>}
       </p>
     </div>

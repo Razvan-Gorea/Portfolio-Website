@@ -18,7 +18,7 @@ function About() {
       
       <p className="text-black text-xl text-center max-w-2xl mb-15">
         I enjoy creating modern web applications using cutting-edge technologies.
-        I have experience in creating RESTful APIs, developing frontend interfaces, as well as creating scalable backend systems.
+        I have experience in creating RESTful APIs, developing responsive frontend interfaces, as well as creating scalable backend systems.
       </p>
     </div>
   );
