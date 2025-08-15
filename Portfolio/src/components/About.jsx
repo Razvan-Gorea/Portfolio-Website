@@ -6,7 +6,7 @@ function About() {
   return (
     <div
       ref={ref}
-      className={`flex flex-col items-start ml-16 sm:ml-24 md:ml-32 lg:ml-40 transition-all duration-2000 ease-out ${
+      className={`flex flex-col items-start ml-20 sm:ml-32 md:ml-40 lg:ml-48 pt-40 transition-all duration-2000 ease-out ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
       }`}
     >

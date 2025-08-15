@@ -1,6 +1,6 @@
 import { useInViewAnimation } from "../hooks/useInViewAnimation";
 import { FaPython, FaJs, FaJava, FaReact, FaDocker, FaGitAlt } from "react-icons/fa";
-import { SiC, SiDjango, SiFastapi } from "react-icons/si";
+import { SiC, SiDjango, SiFastapi, SiExpress } from "react-icons/si";
 import { BiData } from "react-icons/bi";
 import { MdIntegrationInstructions } from "react-icons/md";
 
@@ -16,6 +16,7 @@ function Technologies() {
     { name: "React", icon: FaReact },
     { name: "Django", icon: SiDjango },
     { name: "FastAPI", icon: SiFastapi },
+    { name: "Express", icon: SiExpress },
     { name: "Docker", icon: FaDocker },
     { name: "Git", icon: FaGitAlt },
     { name: "CI/CD", icon: MdIntegrationInstructions }
@@ -25,7 +26,7 @@ function Technologies() {
     <>
       <div
         ref={ref}
-        className={`flex flex-col items-start ml-16 sm:ml-24 md:ml-32 lg:ml-40 transition-all duration-2000 ease-out ${
+        className={`flex flex-col items-start ml-20 sm:ml-32 md:ml-40 lg:ml-48 transition-all duration-2000 ease-out ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >
