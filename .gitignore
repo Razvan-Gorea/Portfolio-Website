@@ -16,10 +16,6 @@ node_modules/
 coverage/
 *.lcov
 
-# Production builds
-dist/
-build/
-
 # Environment variables
 .env
 .env.local
