@@ -7,21 +7,21 @@ function Projects() {
   const projects = [
     {
       title: "Full Stack Multi-Agent Application",
-      description: "A multi-agent Retrieval Augmented Generation (RAG) system that centralizes fragmented data sources (SQL databases, document stores, etc.) into a unified vector database for intelligent information retrieval",
+      description: "A multi-agent Retrieval Augmented Generation (RAG) system that centralizes fragmented data stores (SQL databases, document stores, etc.) into a unified vector database for intelligent information retrieval.",
       technologies: ["Python", "FastAPI", "LangGraph", "JavaScript", "React", "SQL"],
       github: "#",
       demo: "#"
     },
     {
       title: "Ireland Hiking Web Application", 
-      description: "",
+      description: "A hiking web application that shows walking, jogging and cycling trails in Ireland. Each trail also displays the length along with a difficulty rating.",
       technologies: ["JavaScript", "React", "Python", "Django", "Leaflet"],
       github: "#",
       demo: "#"
     },
     {
       title: "NASA Risk Assessment Dashboard",
-      description: "Placeholder Description",
+      description: "A web based dashboard that utilizes NASA's public Near Earth Objects API to display risk assessments. The dashboard also supports individual lookups of near earth objects, filters and visualizations of data.",
       technologies: ["JavaScript", "React", "Node.js", "Express"],
       github: "#",
       demo: "#"
