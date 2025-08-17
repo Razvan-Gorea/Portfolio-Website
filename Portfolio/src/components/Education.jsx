@@ -6,7 +6,7 @@ function Education() {
   return (
     <div
       ref={ref}
-      className={`flex flex-col items-end mr-20 sm:mr-32 md:mr-40 lg:mr-48 transition-all duration-2000 ease-out ${
+      className={`flex flex-col items-end px-6 sm:px-12 md:px-20 lg:px-32 transition-all duration-2000 ease-out ${
         isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"
       }`}
     >

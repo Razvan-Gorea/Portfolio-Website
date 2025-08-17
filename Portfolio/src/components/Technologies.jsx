@@ -26,7 +26,7 @@ function Technologies() {
     <>
       <div
         ref={ref}
-        className={`flex flex-col items-start ml-20 sm:ml-32 md:ml-40 lg:ml-48 transition-all duration-2000 ease-out ${
+        className={`flex flex-col items-start px-6 sm:px-12 md:px-20 lg:px-32 transition-all duration-2000 ease-out ${
           isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
         }`}
       >

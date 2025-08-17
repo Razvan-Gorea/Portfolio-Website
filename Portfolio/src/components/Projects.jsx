@@ -23,7 +23,7 @@ function Projects() {
       description: "An interactive dashboard leveraging NASA's Near Earth Objects API to visualize asteroid risk assessments with advanced filtering, search capabilities, and real-time data visualization.",
       technologies: ["JavaScript", "HTML", "Tailwind CSS", "React", "Node.js", "Express"],
       github: "https://github.com/Razvan-Gorea/Asteroid-Risk-Assessment-Dashboard",
-      demo: "#"
+      demo: "https://asteroid-risk-assessment-dashboard.onrender.com/"
     }
   ];
 
@@ -34,7 +34,7 @@ function Projects() {
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
       }`}
     >
-      <p className="text-black text-3xl text-center pt-30 mb-8 font-bold">Browse My Projects</p>
+      <p className="text-black text-3xl text-center pt-30 mb-8 font-bold">My Projects</p>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl px-4 mb-40">
         {projects.map((project, index) => (
