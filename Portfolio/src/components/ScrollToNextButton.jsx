@@ -49,7 +49,7 @@ function ScrollToNextButton() {
   return (
     <button
       onClick={scrollToNextSection}
-      className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 bg-white shadow-md rounded-xl p-3 sm:p-4 text-black hover:text-slate-400 transition-colors hover:bg-gray-50"
+      className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 bg-white shadow-md rounded-xl p-4 sm:p-5 md:p-6 text-black hover:text-slate-400 transition-colors hover:bg-gray-50"
     >
       <FaChevronDown className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
     </button>

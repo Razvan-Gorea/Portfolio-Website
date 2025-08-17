@@ -6,23 +6,23 @@ function Projects() {
   
   const projects = [
     {
-      title: "Project One",
-      description: "Placeholder Description",
-      technologies: ["Placeholder"],
+      title: "Full Stack Multi-Agent Application",
+      description: "A multi-agent Retrieval Augmented Generation (RAG) system that centralizes fragmented data sources (SQL databases, document stores, etc.) into a unified vector database for intelligent information retrieval",
+      technologies: ["Python", "FastAPI", "LangGraph", "JavaScript", "React", "SQL"],
       github: "#",
       demo: "#"
     },
     {
-      title: "Project Two", 
-      description: "Placeholder Description",
-      technologies: ["Placeholder"],
+      title: "Ireland Hiking Web Application", 
+      description: "",
+      technologies: ["JavaScript", "React", "Python", "Django", "Leaflet"],
       github: "#",
       demo: "#"
     },
     {
-      title: "Project Three",
+      title: "NASA Risk Assessment Dashboard",
       description: "Placeholder Description",
-      technologies: ["Placeholder"],
+      technologies: ["JavaScript", "React", "Node.js", "Express"],
       github: "#",
       demo: "#"
     }
@@ -31,11 +31,11 @@ function Projects() {
   return (
     <div
       ref={ref}
-      className={`flex flex-col items-center transition-all mt-50 pb-20 duration-2000 ease-out ${
+      className={`flex flex-col items-center transition-all mt-50 duration-2000 ease-out ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
       }`}
     >
-      <p className="text-black text-4xl text-center mb-8 font-bold">Projects</p>
+      <p className="text-black text-4xl text-center mb-8 font-bold">Browse My Projects</p>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl px-4 mb-40">
         {projects.map((project, index) => (
