@@ -11,13 +11,13 @@ function Projects() {
       technologies: ["Python", "JavaScript", "HTML/CSS","FastAPI", "LangGraph", "JavaScript", "React", "SQL", "Docker", "Git", "Gitlab CI"],
       github: "https://github.com/Razvan-Gorea/LangGraph-Multi-Agent-System"
     },
-    {
+    /**{
       title: "Ireland Hiking Application", 
       description: "A hiking web application that shows walking, jogging and cycling trails in Ireland. Each trail also displays the length along with a difficulty rating.",
       technologies: ["Python", "JavaScript", "HTML/CSS","React", "Django", "Leaflet", "Git"],
       github: "https://github.com/Razvan-Gorea/Trekster",
       demo: "#"
-    },
+    },**/
     {
       title: "NASA Risk Dashboard",
       description: "An interactive dashboard leveraging NASA's Near Earth Objects API to visualize asteroid risk assessments with advanced filtering, search capabilities, and real-time data visualization.",
