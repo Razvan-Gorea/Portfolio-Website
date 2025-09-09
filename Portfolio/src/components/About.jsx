@@ -10,13 +10,13 @@ function About() {
         isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
       }`}
     >
-      <p className="text-black text-3xl font-bold text-left mb-4 pt-10">About</p>
+      <p className="text-black responsive-text-3xl font-bold text-left mb-4 pt-10">About</p>
       
-      <p className="text-black text-lg text-left max-w-2xl mb-4">
+      <p className="text-black responsive-text-lg text-left max-w-2xl mb-4">
         I'm Razvan, a full-stack developer from Dublin, Ireland. What I love the most about software development is the problem-solving aspect. Taking a complex challenge and stepping through it piece by piece until a solution has been created.
       </p>
       
-      <p className="text-black text-lg text-left max-w-2xl mb-10">
+      <p className="text-black responsive-text-lg text-left max-w-2xl mb-10">
         I enjoy creating modern web applications using cutting-edge technologies, with experience in building RESTful APIs, responsive frontends, and scalable backend systems. Each project is a brand new puzzle to solve, and I find that incredibly rewarding.
       </p>
     </div>

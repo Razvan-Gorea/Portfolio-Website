@@ -30,16 +30,16 @@ function Technologies() {
           isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
         }`}
       >
-        <p className="text-black text-3xl text-left mb-4 font-bold">Skills</p>
+        <p className="text-black responsive-text-3xl text-left mb-4 font-bold">Skills</p>
         <div className="flex flex-wrap gap-3 justify-start mb-40 max-w-2xl">
           {skills.map((skill) => {
             const IconComponent = skill.icon;
             return (
               <div
                 key={skill.name}
-                className="px-4 py-2 rounded-full border-2 bg-white border-gray-300 text-black text-lg flex items-center gap-2"
+                className="px-4 py-2 rounded-full border-2 bg-white border-gray-300 text-black responsive-text-lg flex items-center gap-2"
               >
-                <IconComponent className="text-lg" />
+                <IconComponent className="responsive-text-lg" />
                 {skill.name}
               </div>
             );

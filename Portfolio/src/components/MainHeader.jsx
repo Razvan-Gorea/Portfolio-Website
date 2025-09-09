@@ -29,7 +29,7 @@ function MainHeader() {
             
             // Start scroll text after a delay
             setTimeout(() => {
-              const scrollString = 'Learn About Me!';
+              const scrollString = 'Learn About Me Below!';
               let scrollIndex = 0;
               
               const scrollInterval = setInterval(() => {
@@ -47,23 +47,23 @@ function MainHeader() {
 
 
   const nameComplete = nameText.length >= "Hey, I'm Razvan".length;
-  const scrollComplete = scrollText.length >= 'Learn About Me!'.length;
+  const scrollComplete = scrollText.length >= 'Learn About Me Below!'.length;
 
   return (
     <div
       ref={ref}
       className="flex flex-col items-center pt-45 px-4"
     >
-      <p className="text-black text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-4">
-        {nameText}{!nameComplete && <span className="animate-pulse text-3xl sm:text-4xl md:text-5xl">|</span>}
+      <p className="text-black responsive-text-4xl sm:responsive-text-5xl md:responsive-text-6xl font-bold text-center mb-4">
+        {nameText}{!nameComplete && <span className="animate-pulse responsive-text-3xl sm:responsive-text-4xl md:responsive-text-5xl">|</span>}
       </p>
-      <p className="text-black text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-8">
-        {typewriterText}{nameComplete && <span className="animate-pulse text-3xl sm:text-4xl md:text-5xl">|</span>}
+      <p className="text-black responsive-text-4xl sm:responsive-text-5xl md:responsive-text-6xl font-bold text-center mb-8">
+        {typewriterText}{nameComplete && <span className="animate-pulse responsive-text-3xl sm:responsive-text-4xl md:responsive-text-5xl">|</span>}
       </p>
       
       <div className="flex items-center justify-center gap-4 mb-170">
-        <p className="text-black text-lg font-medium mt-100">
-          {scrollText}{scrollComplete && <span className="animate-pulse text-base">|</span>}
+        <p className="text-black responsive-text-lg font-medium mt-100">
+          {scrollText}{scrollComplete && <span className="animate-pulse responsive-text-base">|</span>}
         </p>
       </div>
     </div>

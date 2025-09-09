@@ -34,16 +34,16 @@ function Projects() {
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
       }`}
     >
-      <p className="text-black text-3xl text-center pt-30 mb-8 font-bold">My Projects</p>
+      <p className="text-black responsive-text-3xl text-center pt-30 mb-8 font-bold">My Projects</p>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl px-4 mb-40">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg shadow-xl p-6 border border-gray-200 hover:shadow-lg transition-shadow duration-300"
+            className="bg-white rounded-lg shadow-xl p-6 border border-gray-300 hover:shadow-lg transition-shadow duration-300"
           >
             <div className="flex justify-between items-start mb-4">
-              <h3 className="text-black text-lg font-medium">{project.title}</h3>
+              <h3 className="text-black responsive-text-lg font-medium">{project.title}</h3>
               <div className="flex gap-3">
                 <a
                   href={project.github}
@@ -64,7 +64,7 @@ function Projects() {
               </div>
             </div>
             
-            <p className="text-gray-700 text-base mb-4 leading-relaxed">
+            <p className="text-gray-700 responsive-text-base mb-4 leading-relaxed">
               {project.description}
             </p>
             
@@ -72,7 +72,7 @@ function Projects() {
               {project.technologies.map((tech, techIndex) => (
                 <span
                   key={techIndex}
-                  className="px-3 py-1 text-sm bg-gray-100 text-gray-800 rounded-full border border-gray-300 font-medium"
+                  className="px-3 py-1 text-xs sm:text-sm bg-gray-100 text-gray-800 rounded-full border border-gray-300 font-medium"
                 >
                   {tech}
                 </span>

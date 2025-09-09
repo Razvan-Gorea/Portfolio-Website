@@ -11,7 +11,7 @@ import ScrollToNextButton from "./components/ScrollToNextButton";
 function App() {
   return (
     <>
-      <div id="top" className="min-h-screen bg-slate-200 pt-8">
+      <div id="top" className="min-h-screen bg-white pt-8">
         <NavigationBar />
         <MainHeader />
         <div id="about">
