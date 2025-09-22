@@ -17,7 +17,7 @@ function About() {
       </p>
       
       <p className="text-black responsive-text-lg text-left max-w-2xl mb-4">
-        I'm passionate about React.js and Next.js for crafting seamless user experiences, paired with Python-powered such as FastAPI for robust, scalable systems. My approach is straightforward: break down complex problems step by step until they're solved. No fluff, just results.
+        I'm passionate about React.js and Next.js for crafting seamless user experiences, paired with Python-based frameworks such as FastAPI for robust, scalable systems. My approach is straightforward: break down complex problems step by step until they're solved. No fluff, just results.
       </p>
       
       <p className="text-black responsive-text-lg text-left max-w-2xl mb-10">
