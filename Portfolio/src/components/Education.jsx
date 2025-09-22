@@ -10,9 +10,9 @@ function Education() {
         isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"
       }`}
     >
-      <p className="text-black responsive-text-3xl text-right mb-4 font-bold">Education</p>
+      <p className="text-black responsive-text-3xl text-right mb-4 font-bold">My Education</p>
       <p className="text-black responsive-text-lg text-right mb-4 max-w-3xl">
-        M.Sc. in Computing (Artifical intelligence) at Dublin City University (2025 - 2026)
+        M.Sc. in Computing (Major: Artifical intelligence) at Dublin City University (2025 - 2026)
       </p>
       
       <p className="text-black responsive-text-lg text-right mb-5 max-w-2xl">
