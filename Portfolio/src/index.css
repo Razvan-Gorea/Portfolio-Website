@@ -16,28 +16,28 @@ body {
 
 /* Responsive typography utilities */
 @media (max-width: 640px) {
-  .responsive-text-3xl { font-size: 1.5rem; line-height: 2rem; }
-  .responsive-text-4xl { font-size: 1.875rem; line-height: 2.25rem; }
-  .responsive-text-5xl { font-size: 2.25rem; line-height: 2.5rem; }
-  .responsive-text-6xl { font-size: 2.5rem; line-height: 1; }
-  .responsive-text-lg { font-size: 0.875rem; line-height: 1.25rem; }
-  .responsive-text-base { font-size: 0.75rem; line-height: 1rem; }
+  .responsive-text-3xl { font-size: 1.375rem; line-height: 1.875rem; }
+  .responsive-text-4xl { font-size: 1.75rem; line-height: 2.125rem; }
+  .responsive-text-5xl { font-size: 2rem; line-height: 2.375rem; }
+  .responsive-text-6xl { font-size: 2.25rem; line-height: 1; }
+  .responsive-text-lg { font-size: 0.8125rem; line-height: 1.1875rem; }
+  .responsive-text-base { font-size: 0.6875rem; line-height: 0.9375rem; }
 }
 
 @media (min-width: 641px) and (max-width: 768px) {
-  .responsive-text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
-  .responsive-text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
-  .responsive-text-5xl { font-size: 3rem; line-height: 1; }
-  .responsive-text-6xl { font-size: 3.75rem; line-height: 1; }
-  .responsive-text-lg { font-size: 1rem; line-height: 1.5rem; }
-  .responsive-text-base { font-size: 0.875rem; line-height: 1.25rem; }
+  .responsive-text-3xl { font-size: 1.75rem; line-height: 2.125rem; }
+  .responsive-text-4xl { font-size: 2rem; line-height: 2.375rem; }
+  .responsive-text-5xl { font-size: 2.75rem; line-height: 1; }
+  .responsive-text-6xl { font-size: 3.375rem; line-height: 1; }
+  .responsive-text-lg { font-size: 0.9375rem; line-height: 1.4375rem; }
+  .responsive-text-base { font-size: 0.8125rem; line-height: 1.1875rem; }
 }
 
 @media (min-width: 769px) {
-  .responsive-text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
-  .responsive-text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
-  .responsive-text-5xl { font-size: 3rem; line-height: 1; }
-  .responsive-text-6xl { font-size: 3.75rem; line-height: 1; }
-  .responsive-text-lg { font-size: 1.125rem; line-height: 1.75rem; }
-  .responsive-text-base { font-size: 1rem; line-height: 1.5rem; }
+  .responsive-text-3xl { font-size: 1.75rem; line-height: 2.125rem; }
+  .responsive-text-4xl { font-size: 2rem; line-height: 2.375rem; }
+  .responsive-text-5xl { font-size: 2.75rem; line-height: 1; }
+  .responsive-text-6xl { font-size: 3.375rem; line-height: 1; }
+  .responsive-text-lg { font-size: 1.0625rem; line-height: 1.625rem; }
+  .responsive-text-base { font-size: 0.9375rem; line-height: 1.4375rem; }
 }
