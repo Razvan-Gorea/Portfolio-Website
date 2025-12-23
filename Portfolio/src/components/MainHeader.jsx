@@ -61,7 +61,7 @@ function MainHeader() {
         {typewriterText}{nameComplete && <span className="animate-pulse responsive-text-3xl sm:responsive-text-4xl md:responsive-text-5xl">|</span>}
       </p>
 
-      <div className="flex items-center justify-center gap-4 mb-24 sm:mb-32 md:mb-40 lg:mb-[25vh]">
+      <div className="flex items-center justify-center gap-4 mb-[50vh] sm:mb-[60vh] md:mb-[70vh] lg:mb-[80vh]">
         <p className="text-black responsive-text-lg sm:responsive-text-lg md:responsive-text-lg font-bold mt-16 sm:mt-20 md:mt-28 lg:mt-[12vh]">
           {scrollText}{scrollComplete && <span className="animate-pulse responsive-text-base">|</span>}
         </p>
