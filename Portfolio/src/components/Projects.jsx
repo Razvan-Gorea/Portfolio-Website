@@ -29,13 +29,13 @@ function Projects() {
   return (
     <div
       ref={ref}
-      className={`flex flex-col items-center transition-all mt-50 duration-2000 ease-out ${
+      className={`flex flex-col items-center transition-all mt-32 sm:mt-40 md:mt-48 lg:mt-[20vh] duration-2000 ease-out ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
       }`}
     >
-      <p className="text-black responsive-text-3xl text-center pt-30 mb-8 font-bold">My Projects</p>
-      
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl px-4 mb-40">
+      <p className="text-black responsive-text-3xl text-center pt-16 sm:pt-20 md:pt-24 lg:pt-[8vh] mb-8 font-bold">My Projects</p>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl px-4 mb-20 sm:mb-24 md:mb-32 lg:mb-[10vh]">
         {projects.map((project, index) => (
           <div
             key={index}

@@ -26,12 +26,12 @@ function Technologies() {
     <>
       <div
         ref={ref}
-        className={`flex flex-col items-start px-6 sm:px-12 md:px-20 lg:px-32 transition-all duration-2000 ease-out ${
+        className={`flex flex-col items-start transition-all duration-2000 ease-out ${
           isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
         }`}
       >
         <p className="text-black responsive-text-3xl text-left mb-4 font-bold">My Skills</p>
-        <div className="flex flex-wrap gap-3 justify-start mb-40 max-w-2xl">
+        <div className="flex flex-wrap gap-3 justify-start max-w-2xl">
           {skills.map((skill) => {
             const IconComponent = skill.icon;
             return (

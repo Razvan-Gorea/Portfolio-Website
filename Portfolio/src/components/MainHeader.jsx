@@ -29,7 +29,7 @@ function MainHeader() {
             
             // Start scroll text after a delay
             setTimeout(() => {
-              const scrollString = 'Learn About Me Below!';
+              const scrollString = 'Welcome!👋';
               let scrollIndex = 0;
               
               const scrollInterval = setInterval(() => {
@@ -47,12 +47,12 @@ function MainHeader() {
 
 
   const nameComplete = nameText.length >= "Hey, I'm Razvan".length;
-  const scrollComplete = scrollText.length >= 'Learn About Me Below!'.length;
+  const scrollComplete = scrollText.length >= 'Welcome!👋'.length;
 
   return (
     <div
       ref={ref}
-      className="flex flex-col items-center pt-45 px-4"
+      className="flex flex-col items-center pt-20 sm:pt-24 md:pt-32 lg:pt-[15vh] px-4"
     >
       <p className="text-black responsive-text-4xl sm:responsive-text-5xl md:responsive-text-6xl font-bold text-center mb-4">
         {nameText}{!nameComplete && <span className="animate-pulse responsive-text-3xl sm:responsive-text-4xl md:responsive-text-5xl">|</span>}
@@ -60,9 +60,9 @@ function MainHeader() {
       <p className="text-black responsive-text-4xl sm:responsive-text-5xl md:responsive-text-6xl font-bold text-center mb-8">
         {typewriterText}{nameComplete && <span className="animate-pulse responsive-text-3xl sm:responsive-text-4xl md:responsive-text-5xl">|</span>}
       </p>
-      
-      <div className="flex items-center justify-center gap-4 mb-170">
-        <p className="text-black responsive-text-lg font-medium mt-100">
+
+      <div className="flex items-center justify-center gap-4 mb-24 sm:mb-32 md:mb-40 lg:mb-[25vh]">
+        <p className="text-black responsive-text-lg sm:responsive-text-lg md:responsive-text-lg font-bold mt-16 sm:mt-20 md:mt-28 lg:mt-[12vh]">
           {scrollText}{scrollComplete && <span className="animate-pulse responsive-text-base">|</span>}
         </p>
       </div>

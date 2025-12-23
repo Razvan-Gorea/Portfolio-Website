@@ -6,11 +6,11 @@ function About() {
   return (
     <div
       ref={ref}
-      className={`flex flex-col items-start px-6 sm:px-12 md:px-20 lg:px-32 pt-20 transition-all duration-2000 ease-out ${
+      className={`flex flex-col items-start transition-all duration-2000 ease-out ${
         isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
       }`}
     >
-      <p className="text-black responsive-text-3xl font-bold text-left mb-4 pt-10">About Me</p>
+      <p className="text-black responsive-text-3xl font-bold text-left mb-4">About Me</p>
       
       <p className="text-black responsive-text-lg text-left max-w-2xl mb-4">
         I'm Razvan, a full-stack developer from Dublin, Ireland, with a direct approach to turning unique product ideas into reality. My university background gave me the foundation, but what really drives me is executing solutions that tackle real-world problems head-on.
