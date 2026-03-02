@@ -6,7 +6,7 @@ import { MdIntegrationInstructions } from "react-icons/md";
 
 function Technologies() {
   const { ref, isVisible } = useInViewAnimation(1400);
-  
+
   const skills = [
     { name: "Python", icon: FaPython },
     { name: "JavaScript", icon: FaJs },
@@ -26,18 +26,20 @@ function Technologies() {
     <>
       <div
         ref={ref}
-        className={`flex flex-col items-start transition-all duration-2000 ease-out ${
-          isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
-        }`}
+        className={`flex flex-col items-start transition-all duration-2000 ease-out ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
+          }`}
       >
-        <p className="text-black responsive-text-3xl text-left mb-4 font-bold">My Skills</p>
+        <p className="gradient-text responsive-text-3xl text-left mb-6 font-bold">My Skills</p>
         <div className="flex flex-wrap gap-3 justify-start max-w-2xl">
-          {skills.map((skill) => {
+          {skills.map((skill, index) => {
             const IconComponent = skill.icon;
             return (
               <div
                 key={skill.name}
-                className="px-4 py-2 rounded-full border-2 bg-white border-gray-300 text-black responsive-text-lg flex items-center gap-2"
+                className="skill-pill px-4 py-2 rounded-full border-2 bg-white/80 border-gray-200 text-gray-700 responsive-text-lg flex items-center gap-2 cursor-default"
+                style={{
+                  animationDelay: `${index * 0.1}s`
+                }}
               >
                 <IconComponent className="responsive-text-lg" />
                 {skill.name}
