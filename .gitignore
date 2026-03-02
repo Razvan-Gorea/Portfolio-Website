@@ -43,3 +43,7 @@ vite.config.ts.timestamp-*
 *.njsproj
 *.sln
 *.sw?
+
+.agents
+.claude
+skills-lock.json
