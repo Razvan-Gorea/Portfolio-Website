@@ -5,50 +5,51 @@ import { BiData } from "react-icons/bi";
 import { MdIntegrationInstructions } from "react-icons/md";
 
 function Technologies() {
-  const { ref, isVisible } = useInViewAnimation(1400);
+  const { ref, isVisible } = useInViewAnimation(750);
 
   const skills = [
-    { name: "Python", icon: FaPython },
+    { name: "Python",     icon: FaPython },
     { name: "JavaScript", icon: FaJs },
-    { name: "C", icon: SiC },
-    { name: "Java", icon: FaJava },
-    { name: "SQL", icon: BiData },
-    { name: "React", icon: FaReact },
-    { name: "Django", icon: SiDjango },
-    { name: "FastAPI", icon: SiFastapi },
-    { name: "Express", icon: SiExpress },
-    { name: "Docker", icon: FaDocker },
-    { name: "Git", icon: FaGitAlt },
-    { name: "CI/CD", icon: MdIntegrationInstructions }
+    { name: "C",          icon: SiC },
+    { name: "Java",       icon: FaJava },
+    { name: "SQL",        icon: BiData },
+    { name: "React",      icon: FaReact },
+    { name: "Django",     icon: SiDjango },
+    { name: "FastAPI",    icon: SiFastapi },
+    { name: "Express",    icon: SiExpress },
+    { name: "Docker",     icon: FaDocker },
+    { name: "Git",        icon: FaGitAlt },
+    { name: "CI/CD",      icon: MdIntegrationInstructions },
   ];
 
   return (
-    <>
-      <div
-        ref={ref}
-        className={`flex flex-col items-start transition-all duration-2000 ease-out ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
-          }`}
-      >
-        <p className="gradient-text responsive-text-3xl text-left mb-6 font-bold">My Skills</p>
-        <div className="flex flex-wrap gap-3 justify-start max-w-2xl">
-          {skills.map((skill, index) => {
-            const IconComponent = skill.icon;
-            return (
-              <div
-                key={skill.name}
-                className="skill-pill px-4 py-2 rounded-full border-2 bg-white/80 border-gray-200 text-gray-700 responsive-text-lg flex items-center gap-2 cursor-default"
-                style={{
-                  animationDelay: `${index * 0.1}s`
-                }}
-              >
-                <IconComponent className="responsive-text-lg" />
-                {skill.name}
-              </div>
-            );
-          })}
-        </div>
+    <div
+      ref={ref}
+      className={`flex flex-col transition-all duration-700 ease-out ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+      }`}
+    >
+      <div className="flex items-center gap-3 mb-8">
+        <span className="section-num">03</span>
+        <div className="h-px flex-1 bg-[#1C1C1C]" />
+        <span className="section-label">Skills</span>
       </div>
-    </>
+
+      <div className="flex flex-wrap gap-2">
+        {skills.map((skill) => {
+          const IconComponent = skill.icon;
+          return (
+            <div
+              key={skill.name}
+              className="skill-chip px-3 py-1.5 flex items-center gap-1.5"
+            >
+              <IconComponent className="w-3 h-3 flex-shrink-0" />
+              <span>{skill.name}</span>
+            </div>
+          );
+        })}
+      </div>
+    </div>
   );
 }
 

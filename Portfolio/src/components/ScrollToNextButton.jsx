@@ -8,7 +8,6 @@ function ScrollToNextButton() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + window.innerHeight / 2;
-
       const sectionElements = sections.map(id => document.getElementById(id));
 
       for (let i = sectionElements.length - 1; i >= 0; i--) {
@@ -27,28 +26,25 @@ function ScrollToNextButton() {
   }, []);
 
   const scrollToNextSection = () => {
-    const nextSectionIndex = Math.min(currentSection + 1, sections.length - 1);
-    const nextSectionId = sections[nextSectionIndex];
-    const element = document.getElementById(nextSectionId);
-
+    const nextIndex = Math.min(currentSection + 1, sections.length - 1);
+    const element = document.getElementById(sections[nextIndex]);
     if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
 
-  if (currentSection >= sections.length - 1) {
-    return null;
-  }
+  if (currentSection >= sections.length - 1) return null;
 
   return (
     <button
       onClick={scrollToNextSection}
-      className="fixed bottom-16 sm:bottom-12 md:bottom-8 left-1/2 transform -translate-x-1/2 z-50 glass rounded-full p-3 sm:p-4 md:p-5 text-gray-600 hover:text-indigo-600 transition-all duration-300 hover:scale-110 shadow-lg shadow-indigo-500/10 group"
+      className="fixed bottom-7 left-1/2 -translate-x-1/2 z-50 glass-dark
+                 p-3 text-[#505050] hover:text-[#C9FF47] hover:border-[#C9FF47]
+                 transition-all duration-200 group"
+      style={{ borderRadius: '2px' }}
+      aria-label="Scroll to next section"
     >
-      <FaChevronDown className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 group-hover:animate-bounce" />
+      <FaChevronDown className="w-3.5 h-3.5 group-hover:animate-bounce" />
     </button>
   );
 }

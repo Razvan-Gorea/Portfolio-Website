@@ -28,7 +28,7 @@ function MainHeader() {
             clearInterval(devInterval);
 
             setTimeout(() => {
-              const scrollString = 'Welcome!';
+              const scrollString = 'Welcome';
               let scrollIndex = 0;
 
               const scrollInterval = setInterval(() => {
@@ -44,61 +44,69 @@ function MainHeader() {
     return () => clearInterval(nameInterval);
   }, [isVisible]);
 
-
   const nameComplete = nameText.length >= "Hey, I'm Razvan".length;
-  const scrollComplete = scrollText.length >= 'Welcome!'.length;
+  const scrollComplete = scrollText.length >= 'Welcome'.length;
 
   return (
     <div
       ref={ref}
-      className="relative flex flex-col items-center pt-20 sm:pt-24 md:pt-32 lg:pt-[15vh] px-4"
+      className="relative min-h-screen flex flex-col px-6 sm:px-12 md:px-20 lg:px-32 pt-24 pb-16"
     >
-      {/* Animated background shapes */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div
-          className="bg-shape absolute top-20 left-10 w-72 h-72 bg-gradient-to-br from-indigo-400/30 to-purple-500/20"
-          style={{ animationDelay: '0s' }}
-        />
-        <div
-          className="bg-shape absolute top-40 right-10 w-96 h-96 bg-gradient-to-br from-pink-400/20 to-rose-500/20"
-          style={{ animationDelay: '-5s' }}
-        />
-        <div
-          className="bg-shape absolute bottom-40 left-1/4 w-64 h-64 bg-gradient-to-br from-cyan-400/20 to-blue-500/20"
-          style={{ animationDelay: '-10s' }}
-        />
+      {/* Top meta bar */}
+      <div>
+        <div className="flex justify-between items-center mb-5">
+          <span className="section-label">Portfolio · 2025</span>
+          <span className="section-label">Dublin, Ireland</span>
+        </div>
+        <div className="sep" />
       </div>
 
-      {/* Main content */}
-      <div className="relative z-10">
-        <p className="gradient-text responsive-text-4xl sm:responsive-text-5xl md:responsive-text-6xl font-bold text-center mb-4">
+      {/* Spacer pushes hero to lower half of viewport */}
+      <div className="flex-1" />
+
+      {/* Hero text */}
+      <div className="mb-8 sm:mb-10">
+        <p className="hero-text">
           {nameText}
           {!nameComplete && (
-            <span className="cursor-blink text-indigo-500 responsive-text-3xl sm:responsive-text-4xl md:responsive-text-5xl">|</span>
+            <span className="cursor-blink">_</span>
           )}
         </p>
-        <p className="gradient-text responsive-text-4xl sm:responsive-text-5xl md:responsive-text-6xl font-bold text-center mb-8">
+      </div>
+
+      {/* Accent separator */}
+      <div className="sep-accent mb-5 sm:mb-6" />
+
+      {/* Subtitle row */}
+      <div className="flex items-center justify-between gap-4">
+        <p
+          className="font-display font-semibold uppercase text-[#C9FF47]"
+          style={{
+            fontSize: 'clamp(0.875rem, 2.2vw, 1.25rem)',
+            letterSpacing: '0.22em',
+          }}
+        >
           {typewriterText}
-          {nameComplete && (
-            <span className="cursor-blink text-purple-500 responsive-text-3xl sm:responsive-text-4xl md:responsive-text-5xl">|</span>
+          {nameComplete && !scrollComplete && (
+            <span className="cursor-blink">_</span>
           )}
         </p>
 
-        <div className="flex items-center justify-center gap-4 mb-[50vh] sm:mb-[60vh] md:mb-[70vh] lg:mb-[80vh]">
-          <div className="relative">
-            <p className="text-gray-700 responsive-text-lg sm:responsive-text-lg md:responsive-text-lg font-medium mt-16 sm:mt-20 md:mt-28 lg:mt-[12vh]">
-              {scrollText}
-              {scrollComplete && (
-                <>
-                  <span className="inline-block ml-2 animate-bounce">
-                    <svg className="w-5 h-5 sm:w-6 sm:h-6 inline text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                    </svg>
-                  </span>
-                </>
-              )}
-            </p>
-          </div>
+        <div className="flex items-center gap-2 flex-shrink-0">
+          <span
+            className="section-label"
+            style={{ color: scrollComplete ? '#EDEDED' : '#606060' }}
+          >
+            {scrollText}
+          </span>
+          {scrollComplete && (
+            <span
+              className="animate-bounce text-[#C9FF47] text-xs"
+              style={{ letterSpacing: '0.1em' }}
+            >
+              ↓
+            </span>
+          )}
         </div>
       </div>
     </div>

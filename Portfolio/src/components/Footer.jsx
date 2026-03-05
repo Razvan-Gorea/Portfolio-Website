@@ -1,19 +1,29 @@
 function Footer() {
   return (
-    <footer className="relative py-12 mt-10">
-      {/* Gradient line */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-px bg-gradient-to-r from-transparent via-indigo-300 to-transparent" />
+    <footer className="px-6 sm:px-12 md:px-20 lg:px-32 py-10">
+      <div className="sep mb-8" />
 
-      <div className="container mx-auto px-4 text-center">
-        <p className="text-gray-500 responsive-text-lg font-medium">
-          Built with{' '}
-          <span className="gradient-text">React</span>
-          {' '}&{' '}
-          <span className="gradient-text">Tailwind CSS</span>
-        </p>
-        <p className="text-gray-400 text-sm mt-2">
-          © 2025 Razvan. All rights reserved.
-        </p>
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+        <div>
+          <p
+            className="font-display font-bold text-[#EDEDED] uppercase tracking-widest"
+            style={{ fontSize: '0.9375rem' }}
+          >
+            Razvan Gorea
+          </p>
+          <p className="text-[#404040] mt-1" style={{ fontSize: '0.8125rem', letterSpacing: '0.1em' }}>
+            Full-Stack Developer · Dublin, Ireland
+          </p>
+        </div>
+
+        <div className="flex items-center gap-6">
+          <p className="section-label" style={{ color: '#303030' }}>
+            Built with React & Tailwind CSS
+          </p>
+          <p className="section-label" style={{ color: '#303030' }}>
+            © 2025
+          </p>
+        </div>
       </div>
     </footer>
   );
