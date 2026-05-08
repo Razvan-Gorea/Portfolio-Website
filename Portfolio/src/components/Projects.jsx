@@ -5,29 +5,50 @@ function Projects() {
   const { ref, isVisible } = useInViewAnimation(200);
 
   const projects = [
-    {
-      title: "Full Stack Multi-Agent Application",
-      description:
-        "An intelligent multi-agent RAG system that unifies fragmented data sources into a centralized vector database, enabling smart information retrieval across SQL databases, APIs, and document stores.",
-      technologies: ["Python", "JavaScript", "FastAPI", "LangGraph", "React", "SQL", "Docker", "GitLab CI"],
-      github: "https://github.com/Razvan-Gorea/LangGraph-Multi-Agent-System",
-    },
-    {
-      title: "NASA Risk Dashboard",
-      description:
-        "An interactive dashboard leveraging NASA's Near Earth Objects API to visualize asteroid risk assessments with advanced filtering, search capabilities, and real-time data visualization.",
-      technologies: ["JavaScript", "HTML", "Tailwind CSS", "React", "Node.js", "Express", "Git"],
-      github: "https://github.com/Razvan-Gorea/Asteroid-Risk-Assessment-Dashboard",
-      demo: "https://asteroid-risk-assessment-dashboard.onrender.com/",
-    },
-    {
-      title: "Custom Unix Shell",
-      description:
-        "A custom shell implementation in C that emulates bash functionality on Linux, providing a full-featured CLI with pipelines, I/O redirection, and background process execution.",
-      technologies: ["C"],
-      github: "https://github.com/Razvan-Gorea/Shell-Project",
-    },
-  ];
+  {
+    title: "Full Stack Multi-Agent Application",
+    description:
+      "An intelligent multi-agent RAG system that unifies fragmented data sources into a centralized vector database, enabling smart information retrieval across SQL databases, APIs, and document stores.",
+    technologies: ["Python", "JavaScript", "FastAPI", "LangGraph", "React", "SQL", "Docker", "GitLab CI"],
+    github: "https://github.com/Razvan-Gorea/LangGraph-Multi-Agent-System",
+  },
+  {
+    title: "NASA Risk Dashboard",
+    description:
+      "An interactive dashboard leveraging NASA's Near Earth Objects API to visualize asteroid risk assessments with advanced filtering, search capabilities, and real-time data visualization.",
+    technologies: ["JavaScript", "HTML", "Tailwind CSS", "React", "Node.js", "Express", "Git"],
+    github: "https://github.com/Razvan-Gorea/Asteroid-Risk-Assessment-Dashboard",
+    demo: "https://asteroid-risk-assessment-dashboard.onrender.com/",
+  },
+  {
+    title: "Custom Unix Shell",
+    description:
+      "A custom shell implementation in C that emulates bash functionality on Linux, providing a full-featured CLI with pipelines, I/O redirection, and background process execution.",
+    technologies: ["C"],
+    github: "https://github.com/Razvan-Gorea/Shell-Project",
+  },
+  {
+    title: "AI Image Detection Pipeline",
+    description:
+      "A multi-phase machine learning pipeline that classifies images as Real or AI-Generated, fusing 81 hand-crafted signal-processing features with deep EfficientNet-B3 CNN embeddings through an MLP fusion head.",
+    technologies: ["Python", "PyTorch", "XGBoost", "Scikit-Learn"],
+    github: "https://github.com/Razvan-Gorea/AI-Image-Detection-Project", // Add your GitHub link here
+  },
+  {
+    title: "Waste Type Classification",
+    description:
+      "A deep learning project comparing four CNN architectures for classifying waste images into six categories, with systematic evaluation of preprocessing pipelines and data balancing strategies including SMOTE and DeepSMOTE.",
+    technologies: ["Python", "PyTorch", "Fastai", "Scikit-Learn"],
+    github: "https://github.com/Razvan-Gorea/Waste-Classification-Project", // Add your GitHub link here
+  },
+  {
+    title: "Bitcoin Price Forecasting",
+    description:
+      "A time-series machine learning project forecasting Bitcoin closing prices using SARIMAX, XGBoost, and Random Forest models with lag-based feature engineering and a rolling walk-forward evaluation strategy.",
+    technologies: ["Python", "Scikit-Learn", "Pandas", "Matplotlib"],
+    github: "https://github.com/Razvan-Gorea/Forecasting-Bitcoin", // Add your GitHub link here
+  },
+];
 
   return (
     <div

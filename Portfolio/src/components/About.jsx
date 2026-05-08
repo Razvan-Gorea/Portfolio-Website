@@ -24,7 +24,7 @@ function About() {
         <p className="text-[#A0A0A0] responsive-text-lg leading-relaxed">
           I'm a Computer Science graduate from Dublin City University, currently completing a{' '}
           <span className="text-[#EDEDED] font-medium">Master's in Artificial Intelligence</span>.
-          I build full-stack applications and intelligent systems — from React frontends and Python
+          I build full-stack applications and intelligent systems from React frontends and Python
           APIs to LLM-powered agents and ML pipelines.
         </p>
         <p className="text-[#A0A0A0] responsive-text-lg leading-relaxed">
