@@ -39,7 +39,7 @@ function ScrollToNextButton() {
     <button
       onClick={scrollToNextSection}
       className="fixed bottom-7 left-1/2 -translate-x-1/2 z-50 glass-dark
-                 p-3 text-[#505050] hover:text-[#C9FF47] hover:border-[#C9FF47]
+                 p-3 text-[#737373] hover:text-[#C9FF47] hover:border-[#C9FF47]
                  transition-all duration-200 group"
       style={{ borderRadius: '2px' }}
       aria-label="Scroll to next section"

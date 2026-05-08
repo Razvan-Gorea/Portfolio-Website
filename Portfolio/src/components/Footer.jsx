@@ -11,17 +11,17 @@ function Footer() {
           >
             Razvan Gorea
           </p>
-          <p className="text-[#404040] mt-1" style={{ fontSize: '0.8125rem', letterSpacing: '0.1em' }}>
+          <p className="text-[#686868] mt-1" style={{ fontSize: '0.8125rem', letterSpacing: '0.1em' }}>
             Full-Stack Developer · Dublin, Ireland
           </p>
         </div>
 
         <div className="flex items-center gap-6">
-          <p className="section-label" style={{ color: '#303030' }}>
+          <p className="section-label" style={{ color: '#555555' }}>
             Built with React & Tailwind CSS
           </p>
-          <p className="section-label" style={{ color: '#303030' }}>
-            © 2025
+          <p className="section-label" style={{ color: '#555555' }}>
+            © 2026
           </p>
         </div>
       </div>

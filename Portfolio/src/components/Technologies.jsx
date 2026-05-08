@@ -41,9 +41,9 @@ function Technologies() {
           return (
             <div
               key={skill.name}
-              className="skill-chip px-3 py-1.5 flex items-center gap-1.5"
+              className="skill-chip px-3.5 py-2 flex items-center gap-2"
             >
-              <IconComponent className="w-3 h-3 flex-shrink-0" />
+              <IconComponent className="w-3.5 h-3.5 flex-shrink-0" />
               <span>{skill.name}</span>
             </div>
           );

@@ -38,6 +38,15 @@ function App() {
         aria-hidden="true"
       />
 
+      {/* Ambient lime glow — top-left corner, always visible */}
+      <div
+        className="fixed inset-0 pointer-events-none z-0"
+        style={{
+          background: 'radial-gradient(ellipse 55% 35% at 0% 0%, rgba(201, 255, 71, 0.045) 0%, transparent 65%)',
+        }}
+        aria-hidden="true"
+      />
+
       <div id="top" className="relative z-10">
         <NavigationBar />
         <MainHeader />

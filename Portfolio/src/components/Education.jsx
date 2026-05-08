@@ -39,7 +39,7 @@ function Education() {
             className="group flex gap-4 py-4 border-b border-[#1C1C1C] last:border-b-0 first:border-t border-[#1C1C1C]"
           >
             <div
-              className="mt-0.5 p-1.5 border border-[#1C1C1C] text-[#606060] flex-shrink-0
+              className="mt-0.5 p-1.5 border border-[#1C1C1C] text-[#848484] flex-shrink-0
                          group-hover:border-[#C9FF47] group-hover:text-[#C9FF47] transition-all duration-300"
               style={{ borderRadius: '2px' }}
             >
@@ -63,7 +63,7 @@ function Education() {
                   {item.major}
                 </p>
               )}
-              <p className="text-[#505050] mt-0.5" style={{ fontSize: '0.875rem' }}>
+              <p className="text-[#737373] mt-0.5" style={{ fontSize: '0.875rem' }}>
                 {item.institution}
               </p>
             </div>

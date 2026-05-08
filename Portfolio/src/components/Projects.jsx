@@ -49,13 +49,17 @@ function Projects() {
           <div
             key={index}
             className="project-card group border-t border-[#1C1C1C] last-of-type:border-b py-8 sm:py-10
-                       transition-colors duration-300 hover:bg-[#0C0C0C]"
-            style={{ marginLeft: '-1rem', marginRight: '-1rem', paddingLeft: '1rem', paddingRight: '1rem' }}
+                       transition-colors duration-300"
+            style={{
+              marginLeft: '-1rem',
+              marginRight: '-1rem',
+              paddingLeft: '1rem',
+              paddingRight: '1rem',
+            }}
+            onMouseEnter={e => e.currentTarget.style.background = 'linear-gradient(90deg, rgba(201,255,71,0.03) 0%, transparent 45%)'}
+            onMouseLeave={e => e.currentTarget.style.background = ''}
           >
-            <div className="flex items-start gap-5 sm:gap-8 md:gap-10">
-              {/* Project number */}
-              <span className="project-num mt-1">{String(index + 1).padStart(2, '0')}</span>
-
+            <div className="flex items-start">
               {/* Content */}
               <div className="flex-1 min-w-0 pt-1">
                 <div className="flex items-start justify-between gap-4 mb-3">
@@ -75,7 +79,7 @@ function Projects() {
                       className="accent-link"
                       aria-label="GitHub repository"
                     >
-                      <FaGithub className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
+                      <FaGithub className="w-5 h-5 sm:w-6 sm:h-6" />
                     </a>
                     {project.demo && (
                       <a
@@ -85,13 +89,13 @@ function Projects() {
                         className="accent-link"
                         aria-label="Live demo"
                       >
-                        <FaExternalLinkAlt className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                        <FaExternalLinkAlt className="w-4.5 h-4.5 sm:w-5 sm:h-5" />
                       </a>
                     )}
                   </div>
                 </div>
 
-                <p className="text-[#606060] responsive-text-base mb-5 leading-relaxed max-w-2xl">
+                <p className="text-[#848484] responsive-text-base mb-5 leading-relaxed max-w-2xl">
                   {project.description}
                 </p>
 
@@ -99,9 +103,8 @@ function Projects() {
                   {project.technologies.map((tech, i) => (
                     <span
                       key={i}
-                      className="px-2 py-0.5 text-[0.8125rem] text-[#505050] border border-[#1C1C1C]
-                                 transition-colors duration-200 group-hover:border-[#252525]
-                                 tracking-wide"
+                      className="tech-tag px-2.5 py-1 text-[#707070] border border-[#1C1C1C]
+                                 transition-colors duration-200 group-hover:border-[#242424]"
                       style={{ borderRadius: '2px' }}
                     >
                       {tech}

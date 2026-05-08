@@ -52,10 +52,13 @@ function MainHeader() {
       ref={ref}
       className="relative min-h-screen flex flex-col px-6 sm:px-12 md:px-20 lg:px-32 pt-24 pb-16"
     >
+      {/* Lime atmospheric glow behind hero text */}
+      <div className="hero-glow" aria-hidden="true" />
+
       {/* Top meta bar */}
-      <div>
+      <div className="relative z-10">
         <div className="flex justify-between items-center mb-5">
-          <span className="section-label">Portfolio · 2025</span>
+          <span className="section-label">Portfolio · 2026</span>
           <span className="section-label">Dublin, Ireland</span>
         </div>
         <div className="sep" />
@@ -65,7 +68,7 @@ function MainHeader() {
       <div className="flex-1" />
 
       {/* Hero text */}
-      <div className="mb-8 sm:mb-10">
+      <div className="mb-8 sm:mb-10 relative z-10">
         <p className="hero-text">
           {nameText}
           {!nameComplete && (
@@ -75,10 +78,10 @@ function MainHeader() {
       </div>
 
       {/* Accent separator */}
-      <div className="sep-accent mb-5 sm:mb-6" />
+      <div className="sep-accent mb-5 sm:mb-6 relative z-10" />
 
       {/* Subtitle row */}
-      <div className="flex items-center justify-between gap-4">
+      <div className="flex items-center justify-between gap-4 relative z-10">
         <p
           className="font-display font-semibold uppercase text-[#C9FF47]"
           style={{
@@ -95,7 +98,7 @@ function MainHeader() {
         <div className="flex items-center gap-2 flex-shrink-0">
           <span
             className="section-label"
-            style={{ color: scrollComplete ? '#EDEDED' : '#606060' }}
+            style={{ color: scrollComplete ? '#EDEDED' : '#848484' }}
           >
             {scrollText}
           </span>
