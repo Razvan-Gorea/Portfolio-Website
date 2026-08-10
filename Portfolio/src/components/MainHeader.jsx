@@ -50,7 +50,7 @@ function MainHeader() {
   return (
     <div
       ref={ref}
-      className="relative min-h-screen flex flex-col px-6 sm:px-12 md:px-20 lg:px-32 pt-24 pb-16"
+      className="relative min-h-screen flex flex-col px-6 sm:px-12 md:px-20 lg:px-32 pt-15 pb-30"
     >
       {/* Terracotta atmospheric glow behind hero text */}
       <div className="hero-glow" aria-hidden="true" />
