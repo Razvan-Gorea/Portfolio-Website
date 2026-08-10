@@ -31,7 +31,7 @@ function Technologies() {
     >
       <div className="flex items-center gap-3 mb-8">
         <span className="section-num">03</span>
-        <div className="h-px flex-1 bg-[#1C1C1C]" />
+        <div className="h-px flex-1 bg-[#DCD4C0]" />
         <span className="section-label">Skills</span>
       </div>
 

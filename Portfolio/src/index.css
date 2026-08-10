@@ -1,21 +1,22 @@
 @import "tailwindcss";
 
 @theme {
-  --color-canvas: #080808;
-  --color-panel: #0F0F0F;
-  --color-tile: #131313;
-  --color-edge: #1C1C1C;
-  --color-edge-hi: #2A2A2A;
-  --color-lime: #C9FF47;
-  --color-ivory: #EDEDED;
-  --color-steel: #808080;
-  --color-dim: #333333;
+  --color-canvas: #F5F1E6;
+  --color-panel: #EFE9DB;
+  --color-tile: #EFE9DB;
+  --color-edge: #DCD4C0;
+  --color-edge-hi: #C7BC9E;
+  --color-terracotta: #C1603C;
+  --color-ink: #14171C;
+  --color-ink-soft: #52565D;
+  --color-ink-muted: #726C5C;
+  --color-ink-faint: #A79E88;
 }
 
 :root {
-  --accent: #C9FF47;
-  --accent-dim: rgba(201, 255, 71, 0.07);
-  --border: #1C1C1C;
+  --accent: #C1603C;
+  --accent-dim: rgba(193, 96, 60, 0.08);
+  --border: #DCD4C0;
   --ease: cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -29,9 +30,9 @@ html {
 }
 
 body {
-  background: #080808;
-  color: #EDEDED;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: #F5F1E6;
+  color: #14171C;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -47,8 +48,8 @@ body {
 }
 
 ::selection {
-  background: #C9FF47;
-  color: #000;
+  background: #C1603C;
+  color: #F5F1E6;
 }
 
 /* ── Grain overlay ──────────────────────────────────── */
@@ -62,26 +63,24 @@ body {
 
 /* ── Typography ─────────────────────────────────────── */
 .font-display {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Shippori Mincho', serif;
 }
 
 .hero-text {
-  font-family: 'Syne', sans-serif;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: -0.03em;
-  line-height: 0.9;
-  color: #EDEDED;
+  font-family: 'Shippori Mincho', serif;
+  font-weight: 500;
+  line-height: 1.05;
+  color: #14171C;
   font-size: clamp(3rem, 10vw, 10rem);
 }
 
 /* ── Labels ─────────────────────────────────────────── */
 .section-label {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
   font-size: 0.9375rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #848484;
+  color: #726C5C;
 }
 
 .section-num {
@@ -89,7 +88,7 @@ body {
   font-size: 0.9375rem;
   font-weight: 700;
   letter-spacing: 0.12em;
-  color: #C9FF47;
+  color: #C1603C;
   text-transform: uppercase;
 }
 
@@ -97,7 +96,7 @@ body {
 .hero-glow {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 65% 45% at 10% 80%, rgba(201, 255, 71, 0.06) 0%, transparent 62%);
+  background: radial-gradient(ellipse 65% 45% at 10% 80%, rgba(193, 96, 60, 0.08) 0%, transparent 62%);
   pointer-events: none;
   z-index: 0;
 }
@@ -112,28 +111,28 @@ body {
 /* ── Separators ─────────────────────────────────────── */
 .sep {
   height: 1px;
-  background: #1C1C1C;
+  background: #DCD4C0;
   width: 100%;
 }
 
 .sep-accent {
   height: 1px;
-  background: linear-gradient(90deg, #C9FF47 0%, transparent 55%);
+  background: linear-gradient(90deg, #C1603C 0%, transparent 55%);
   width: 100%;
 }
 
-/* ── Glass dark nav ─────────────────────────────────── */
+/* ── Glass nav ──────────────────────────────────────── */
 .glass-dark {
-  background: rgba(8, 8, 8, 0.92);
+  background: rgba(245, 241, 230, 0.85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid #1C1C1C;
+  border: 1px solid #DCD4C0;
 }
 
 /* ── Skill chip ─────────────────────────────────────── */
 .skill-chip {
-  border: 1px solid #1C1C1C;
-  color: #737373;
+  border: 1px solid #DCD4C0;
+  color: #726C5C;
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.9375rem;
   letter-spacing: 0.03em;
@@ -144,15 +143,15 @@ body {
 }
 
 .skill-chip:hover {
-  border-color: #C9FF47;
-  color: #C9FF47;
-  background: rgba(201, 255, 71, 0.05);
-  box-shadow: 0 0 0 1px rgba(201, 255, 71, 0.1), inset 0 0 14px rgba(201, 255, 71, 0.04);
+  border-color: #C1603C;
+  color: #C1603C;
+  background: rgba(193, 96, 60, 0.07);
+  box-shadow: 0 0 0 1px rgba(193, 96, 60, 0.12), inset 0 0 14px rgba(193, 96, 60, 0.05);
 }
 
 /* ── Nav icon ───────────────────────────────────────── */
 .nav-icon {
-  color: #848484;
+  color: #726C5C;
   transition: color 0.2s ease;
   padding: 0.45rem;
   border-radius: 3px;
@@ -162,7 +161,7 @@ body {
 }
 
 .nav-icon:hover {
-  color: #C9FF47;
+  color: #C1603C;
 }
 
 /* ── Cursor blink ───────────────────────────────────── */
@@ -173,8 +172,8 @@ body {
 
 .cursor-blink {
   animation: blink 1s step-end infinite;
-  color: #C9FF47;
-  text-shadow: 0 0 10px rgba(201, 255, 71, 0.7), 0 0 24px rgba(201, 255, 71, 0.3);
+  color: #C1603C;
+  text-shadow: 0 0 10px rgba(193, 96, 60, 0.7), 0 0 24px rgba(193, 96, 60, 0.3);
 }
 
 /* ── Project number ─────────────────────────────────── */
@@ -182,7 +181,7 @@ body {
   font-family: 'JetBrains Mono', monospace;
   font-size: clamp(3rem, 5.5vw, 6rem);
   font-weight: 700;
-  color: #191919;
+  color: #A79E88;
   line-height: 1;
   letter-spacing: -0.04em;
   transition: color 0.35s var(--ease), text-shadow 0.35s var(--ease);
@@ -193,8 +192,8 @@ body {
 }
 
 .project-card:hover .project-num {
-  color: #C9FF47;
-  text-shadow: 0 0 20px rgba(201, 255, 71, 0.3);
+  color: #C1603C;
+  text-shadow: 0 0 20px rgba(193, 96, 60, 0.3);
 }
 
 /* ── Project card left accent ───────────────────────── */
@@ -204,17 +203,17 @@ body {
 }
 
 .project-card:hover {
-  border-left-color: #C9FF47;
+  border-left-color: #C1603C;
 }
 
 /* ── Accent link ────────────────────────────────────── */
 .accent-link {
-  color: #686868;
+  color: #726C5C;
   transition: color 0.2s ease;
 }
 
 .accent-link:hover {
-  color: #C9FF47;
+  color: #C1603C;
 }
 
 /* ── Responsive text ────────────────────────────────── */

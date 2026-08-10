@@ -52,7 +52,7 @@ function MainHeader() {
       ref={ref}
       className="relative min-h-screen flex flex-col px-6 sm:px-12 md:px-20 lg:px-32 pt-24 pb-16"
     >
-      {/* Lime atmospheric glow behind hero text */}
+      {/* Terracotta atmospheric glow behind hero text */}
       <div className="hero-glow" aria-hidden="true" />
 
       {/* Top meta bar */}
@@ -83,7 +83,7 @@ function MainHeader() {
       {/* Subtitle row */}
       <div className="flex items-center justify-between gap-4 relative z-10">
         <p
-          className="font-display font-semibold uppercase text-[#C9FF47]"
+          className="font-display font-semibold uppercase text-[#C1603C]"
           style={{
             fontSize: 'clamp(0.875rem, 2.2vw, 1.25rem)',
             letterSpacing: '0.22em',
@@ -98,13 +98,13 @@ function MainHeader() {
         <div className="flex items-center gap-2 flex-shrink-0">
           <span
             className="section-label"
-            style={{ color: scrollComplete ? '#EDEDED' : '#848484' }}
+            style={{ color: scrollComplete ? '#14171C' : '#726C5C' }}
           >
             {scrollText}
           </span>
           {scrollComplete && (
             <span
-              className="animate-bounce text-[#C9FF47] text-xs"
+              className="animate-bounce text-[#C1603C] text-xs"
               style={{ letterSpacing: '0.1em' }}
             >
               ↓

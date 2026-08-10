@@ -22,7 +22,7 @@ function NavigationBar() {
             <FiHome className="w-4 h-4" />
           </button>
 
-          <div className="w-px h-3.5 bg-[#1C1C1C] mx-1.5" />
+          <div className="w-px h-3.5 bg-[#DCD4C0] mx-1.5" />
 
           <a
             href="https://github.com/Razvan-Gorea"

@@ -28,21 +28,11 @@ function App() {
         </svg>
       </div>
 
-      {/* Subtle dot-grid background */}
+      {/* Ambient terracotta glow — top-left corner, always visible */}
       <div
         className="fixed inset-0 pointer-events-none z-0"
         style={{
-          backgroundImage: 'radial-gradient(circle, #1A1A1A 1px, transparent 1px)',
-          backgroundSize: '32px 32px',
-        }}
-        aria-hidden="true"
-      />
-
-      {/* Ambient lime glow — top-left corner, always visible */}
-      <div
-        className="fixed inset-0 pointer-events-none z-0"
-        style={{
-          background: 'radial-gradient(ellipse 55% 35% at 0% 0%, rgba(201, 255, 71, 0.045) 0%, transparent 65%)',
+          background: 'radial-gradient(ellipse 55% 35% at 0% 0%, rgba(193, 96, 60, 0.07) 0%, transparent 65%)',
         }}
         aria-hidden="true"
       />
@@ -56,7 +46,7 @@ function App() {
           id="about"
           className="grid grid-cols-1 lg:grid-cols-2 px-6 sm:px-12 md:px-20 lg:px-32"
         >
-          <div className="lg:border-r border-[#1C1C1C] lg:pr-14">
+          <div className="lg:border-r border-[#DCD4C0] lg:pr-14">
             <About />
           </div>
           <div className="lg:pl-14 flex flex-col gap-14 mt-14 lg:mt-0">

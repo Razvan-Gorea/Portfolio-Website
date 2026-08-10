@@ -60,7 +60,7 @@ function Projects() {
       {/* Section header */}
       <div className="flex items-center gap-3 mb-8">
         <span className="section-num">04</span>
-        <div className="h-px flex-1 bg-[#1C1C1C]" />
+        <div className="h-px flex-1 bg-[#DCD4C0]" />
         <span className="section-label">Selected Projects</span>
       </div>
 
@@ -69,7 +69,7 @@ function Projects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="project-card group border-t border-[#1C1C1C] last-of-type:border-b py-8 sm:py-10
+            className="project-card group border-t border-[#DCD4C0] last-of-type:border-b py-8 sm:py-10
                        transition-colors duration-300"
             style={{
               marginLeft: '-1rem',
@@ -77,7 +77,7 @@ function Projects() {
               paddingLeft: '1rem',
               paddingRight: '1rem',
             }}
-            onMouseEnter={e => e.currentTarget.style.background = 'linear-gradient(90deg, rgba(201,255,71,0.03) 0%, transparent 45%)'}
+            onMouseEnter={e => e.currentTarget.style.background = 'linear-gradient(90deg, rgba(193,96,60,0.04) 0%, transparent 45%)'}
             onMouseLeave={e => e.currentTarget.style.background = ''}
           >
             <div className="flex items-start">
@@ -85,8 +85,8 @@ function Projects() {
               <div className="flex-1 min-w-0 pt-1">
                 <div className="flex items-start justify-between gap-4 mb-3">
                   <h3
-                    className="font-display font-bold text-[#EDEDED] leading-tight
-                               group-hover:text-white transition-colors duration-300"
+                    className="font-display font-bold text-[#14171C] leading-tight
+                               transition-colors duration-300"
                     style={{ fontSize: 'clamp(1.125rem, 2.5vw, 1.75rem)' }}
                   >
                     {project.title}
@@ -116,7 +116,7 @@ function Projects() {
                   </div>
                 </div>
 
-                <p className="text-[#848484] responsive-text-base mb-5 leading-relaxed max-w-2xl">
+                <p className="text-[#726C5C] responsive-text-base mb-5 leading-relaxed max-w-2xl">
                   {project.description}
                 </p>
 
@@ -124,8 +124,8 @@ function Projects() {
                   {project.technologies.map((tech, i) => (
                     <span
                       key={i}
-                      className="tech-tag px-2.5 py-1 text-[#707070] border border-[#1C1C1C]
-                                 transition-colors duration-200 group-hover:border-[#242424]"
+                      className="tech-tag px-2.5 py-1 text-[#726C5C] border border-[#DCD4C0]
+                                 transition-colors duration-200 group-hover:border-[#C7BC9E]"
                       style={{ borderRadius: '2px' }}
                     >
                       {tech}
