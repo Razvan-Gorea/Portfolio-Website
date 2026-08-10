@@ -103,7 +103,7 @@ body {
 
 /* ── Tech tag ───────────────────────────────────────── */
 .tech-tag {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
   font-size: 0.8125rem;
   letter-spacing: 0.04em;
 }
@@ -133,7 +133,7 @@ body {
 .skill-chip {
   border: 1px solid #DCD4C0;
   color: #726C5C;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
   font-size: 0.9375rem;
   letter-spacing: 0.03em;
   border-radius: 2px;
