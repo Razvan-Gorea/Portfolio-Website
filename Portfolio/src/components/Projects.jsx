@@ -69,13 +69,20 @@ function Projects() {
         {projects.map((project, index) => (
           <div
             key={index}
+            role="link"
+            tabIndex={0}
+            aria-label={`${project.title} on GitHub`}
             className="project-card group border-t border-[#DCD4C0] last-of-type:border-b py-8 sm:py-10
-                       transition-colors duration-300"
+                       transition-colors duration-300 cursor-pointer"
             style={{
               marginLeft: '-1rem',
               marginRight: '-1rem',
               paddingLeft: '1rem',
               paddingRight: '1rem',
+            }}
+            onClick={() => window.open(project.github, '_blank', 'noopener,noreferrer')}
+            onKeyDown={e => {
+              if (e.key === 'Enter') window.open(project.github, '_blank', 'noopener,noreferrer');
             }}
             onMouseEnter={e => e.currentTarget.style.background = 'linear-gradient(90deg, rgba(193,96,60,0.04) 0%, transparent 45%)'}
             onMouseLeave={e => e.currentTarget.style.background = ''}
@@ -99,6 +106,7 @@ function Projects() {
                       rel="noopener noreferrer"
                       className="accent-link"
                       aria-label="GitHub repository"
+                      onClick={e => e.stopPropagation()}
                     >
                       <FaGithub className="w-5 h-5 sm:w-6 sm:h-6" />
                     </a>
@@ -109,6 +117,7 @@ function Projects() {
                         rel="noopener noreferrer"
                         className="accent-link"
                         aria-label="Live demo"
+                        onClick={e => e.stopPropagation()}
                       >
                         <FaExternalLinkAlt className="w-4.5 h-4.5 sm:w-5 sm:h-5" />
                       </a>
