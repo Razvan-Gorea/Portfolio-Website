@@ -38,7 +38,7 @@ function NavigationBar() {
               ))}
             </div>
 
-            <div className="w-px h-3.5 bg-[#DCD4C0]" />
+            <div className="w-px h-3.5 bg-[#2E2B27]" />
 
             <div className="flex items-center gap-1">
               <a

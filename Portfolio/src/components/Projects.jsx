@@ -60,7 +60,7 @@ function Projects() {
       {/* Section header */}
       <div className="flex items-center gap-3 mb-8">
         <span className="section-num">05</span>
-        <div className="h-px flex-1 bg-[#DCD4C0]" />
+        <div className="h-px flex-1 bg-[#2E2B27]" />
         <span className="section-label">Selected Projects</span>
       </div>
 
@@ -70,7 +70,7 @@ function Projects() {
           <article key={index} className="card project-card group flex flex-col">
             <div className="flex items-start justify-between gap-4 mb-3">
               <h3
-                className="font-display font-bold text-[#14171C] leading-tight"
+                className="font-display font-bold text-[#F2E9D8] leading-tight"
                 style={{ fontSize: 'clamp(1.125rem, 2.5vw, 1.5rem)' }}
               >
                 {project.title}
@@ -100,7 +100,7 @@ function Projects() {
               </div>
             </div>
 
-            <p className="text-[#726C5C] text-body mb-5 leading-relaxed flex-1">
+            <p className="text-[#9C9285] text-body mb-5 leading-relaxed flex-1">
               {project.description}
             </p>
 
@@ -108,8 +108,8 @@ function Projects() {
               {project.technologies.map((tech, i) => (
                 <span
                   key={i}
-                  className="tech-tag px-2.5 py-1 text-[#726C5C] border border-[#DCD4C0]
-                             transition-colors duration-200 group-hover:border-[#C7BC9E]"
+                  className="tech-tag px-2.5 py-1 text-[#9C9285] border border-[#2E2B27]
+                             transition-colors duration-200 group-hover:border-[#4A453D]"
                   style={{ borderRadius: '2px' }}
                 >
                   {tech}

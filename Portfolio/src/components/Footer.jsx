@@ -6,21 +6,21 @@ function Footer() {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
         <div>
           <p
-            className="font-display font-bold text-[#14171C] uppercase tracking-widest"
+            className="font-display font-bold text-[#F2E9D8] uppercase tracking-widest"
             style={{ fontSize: '0.9375rem' }}
           >
             Razvan Gorea
           </p>
-          <p className="text-[#726C5C] mt-1" style={{ fontSize: '0.8125rem', letterSpacing: '0.1em' }}>
+          <p className="text-[#9C9285] mt-1" style={{ fontSize: '0.8125rem', letterSpacing: '0.1em' }}>
             Full-Stack Developer · Dublin, Ireland
           </p>
         </div>
 
         <div className="flex items-center gap-6">
-          <p className="section-label" style={{ color: '#A79E88' }}>
+          <p className="section-label" style={{ color: '#9C9285' }}>
             Built with React & Tailwind CSS
           </p>
-          <p className="section-label" style={{ color: '#A79E88' }}>
+          <p className="section-label" style={{ color: '#9C9285' }}>
             © 2026
           </p>
         </div>

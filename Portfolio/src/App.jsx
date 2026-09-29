@@ -7,6 +7,7 @@ import Technologies from "./components/Technologies";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import ScrollToNextButton from "./components/ScrollToNextButton";
+import CursorGlow from "./components/CursorGlow";
 
 function App() {
   return (
@@ -32,10 +33,12 @@ function App() {
       <div
         className="fixed inset-0 pointer-events-none z-0"
         style={{
-          background: 'radial-gradient(ellipse 55% 35% at 0% 0%, rgba(193, 96, 60, 0.07) 0%, transparent 65%)',
+          background: 'radial-gradient(ellipse 55% 35% at 0% 0%, rgba(217, 122, 78, 0.07) 0%, transparent 65%)',
         }}
         aria-hidden="true"
       />
+
+      <CursorGlow />
 
       <div id="top" className="relative z-10">
         <NavigationBar />

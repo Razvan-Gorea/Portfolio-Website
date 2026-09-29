@@ -19,7 +19,7 @@ function Certifications() {
     >
       <div className="flex items-center gap-3 mb-8">
         <span className="section-num">03</span>
-        <div className="h-px flex-1 bg-[#DCD4C0]" />
+        <div className="h-px flex-1 bg-[#2E2B27]" />
         <span className="section-label">Certifications</span>
       </div>
 
@@ -27,21 +27,21 @@ function Certifications() {
         {certifications.map((item, index) => (
           <div
             key={index}
-            className="group flex gap-4 py-4 border-b border-[#DCD4C0] last:border-b-0 first:border-t border-[#DCD4C0]"
+            className="group flex gap-4 py-4 border-b border-[#2E2B27] last:border-b-0 first:border-t border-[#2E2B27]"
           >
             <div
-              className="mt-0.5 p-1.5 border border-[#DCD4C0] text-[#726C5C] flex-shrink-0
-                         group-hover:border-[#C1603C] group-hover:text-[#C1603C] transition-all duration-300"
+              className="mt-0.5 p-1.5 border border-[#2E2B27] text-[#9C9285] flex-shrink-0
+                         group-hover:border-[#D97A4E] group-hover:text-[#D97A4E] transition-all duration-300"
               style={{ borderRadius: '2px' }}
             >
               <HiCheckBadge className="w-3.5 h-3.5" />
             </div>
 
             <div className="flex-1 min-w-0">
-              <p className="text-[#14171C] text-body font-semibold leading-snug">
+              <p className="text-[#F2E9D8] text-body font-semibold leading-snug">
                 {item.title}
               </p>
-              <p className="text-[#726C5C] mt-0.5" style={{ fontSize: '0.875rem' }}>
+              <p className="text-[#9C9285] mt-0.5" style={{ fontSize: '0.875rem' }}>
                 {item.issuer}
               </p>
             </div>
