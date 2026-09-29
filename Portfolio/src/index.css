@@ -18,6 +18,7 @@
   --accent-dim: rgba(193, 96, 60, 0.08);
   --border: #DCD4C0;
   --ease: cubic-bezier(0.23, 1, 0.32, 1);
+  --nav-height: 4.5rem;
 }
 
 html {
@@ -25,8 +26,9 @@ html {
 }
 
 #about,
+#technologies,
 #projects {
-  scroll-margin-top: 4rem;
+  scroll-margin-top: var(--nav-height);
 }
 
 body {
@@ -52,6 +54,11 @@ body {
   color: #F5F1E6;
 }
 
+:focus-visible {
+  outline: 2px solid #C1603C;
+  outline-offset: 2px;
+}
+
 /* ── Grain overlay ──────────────────────────────────── */
 .grain-overlay {
   position: fixed;
@@ -72,6 +79,17 @@ body {
   line-height: 1.05;
   color: #14171C;
   font-size: clamp(3rem, 10vw, 10rem);
+}
+
+/* ── Body copy (fluid, replaces old .responsive-text-*) ─ */
+.text-body {
+  font-size: clamp(0.9375rem, 0.88rem + 0.3vw, 1.0625rem);
+  line-height: 1.7;
+}
+
+.text-body-lg {
+  font-size: clamp(1rem, 0.92rem + 0.4vw, 1.1875rem);
+  line-height: 1.75;
 }
 
 /* ── Labels ─────────────────────────────────────────── */
@@ -129,6 +147,62 @@ body {
   border: 1px solid #DCD4C0;
 }
 
+/* ── Section container padding ───────────────────────── */
+.section-px {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .section-px { padding-left: 3rem; padding-right: 3rem; }
+}
+
+@media (min-width: 768px) {
+  .section-px { padding-left: 5rem; padding-right: 5rem; }
+}
+
+@media (min-width: 1024px) {
+  .section-px { padding-left: 8rem; padding-right: 8rem; }
+}
+
+/* ── Card ───────────────────────────────────────────── */
+.card {
+  background: #EFE9DB;
+  border: 1px solid #DCD4C0;
+  border-radius: 4px;
+  padding: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .card { padding: 2rem; }
+}
+
+@media (min-width: 1024px) {
+  .card { padding: 2.5rem; }
+}
+
+/* ── Nav bar ──────────────────────────────────────────── */
+.nav-link {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 0.8125rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #726C5C;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #C1603C;
+}
+
+.nav-mobile-panel {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #DCD4C0;
+}
+
 /* ── Skill chip ─────────────────────────────────────── */
 .skill-chip {
   border: 1px solid #DCD4C0;
@@ -176,34 +250,14 @@ body {
   text-shadow: 0 0 10px rgba(193, 96, 60, 0.7), 0 0 24px rgba(193, 96, 60, 0.3);
 }
 
-/* ── Project number ─────────────────────────────────── */
-.project-num {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: clamp(3rem, 5.5vw, 6rem);
-  font-weight: 700;
-  color: #A79E88;
-  line-height: 1;
-  letter-spacing: -0.04em;
-  transition: color 0.35s var(--ease), text-shadow 0.35s var(--ease);
-  user-select: none;
-  flex-shrink: 0;
-  width: clamp(3.5rem, 7vw, 7rem);
-  text-align: right;
-}
-
-.project-card:hover .project-num {
-  color: #C1603C;
-  text-shadow: 0 0 20px rgba(193, 96, 60, 0.3);
-}
-
-/* ── Project card left accent ───────────────────────── */
+/* ── Project card ─────────────────────────────────────── */
 .project-card {
-  border-left: 3px solid transparent;
-  transition: border-left-color 0.35s var(--ease);
+  transition: border-color 0.3s var(--ease);
 }
 
-.project-card:hover {
-  border-left-color: #C1603C;
+.project-card:hover,
+.project-card:focus-within {
+  border-color: #C7BC9E;
 }
 
 /* ── Accent link ────────────────────────────────────── */
@@ -217,26 +271,4 @@ body {
 
 .accent-link:hover {
   color: #C1603C;
-}
-
-/* ── Responsive text ────────────────────────────────── */
-@media (max-width: 640px) {
-  .responsive-text-3xl  { font-size: 1.625rem; line-height: 1.3; }
-  .responsive-text-4xl  { font-size: 1.875rem; line-height: 1.2; }
-  .responsive-text-lg   { font-size: 1rem;     line-height: 1.75; }
-  .responsive-text-base { font-size: 0.9375rem; line-height: 1.65; }
-}
-
-@media (min-width: 641px) and (max-width: 1024px) {
-  .responsive-text-3xl  { font-size: 2rem;     line-height: 1.3; }
-  .responsive-text-4xl  { font-size: 2.25rem;  line-height: 1.2; }
-  .responsive-text-lg   { font-size: 1.0625rem; line-height: 1.75; }
-  .responsive-text-base { font-size: 1rem;     line-height: 1.65; }
-}
-
-@media (min-width: 1025px) {
-  .responsive-text-3xl  { font-size: 2.125rem;  line-height: 1.3; }
-  .responsive-text-4xl  { font-size: 2.5rem;    line-height: 1.2; }
-  .responsive-text-lg   { font-size: 1.1875rem; line-height: 1.8; }
-  .responsive-text-base { font-size: 1.0625rem; line-height: 1.7; }
 }

@@ -25,14 +25,14 @@ function Technologies() {
   return (
     <div
       ref={ref}
-      className={`flex flex-col transition-all duration-700 ease-out ${
+      className={`card flex flex-col transition-all duration-700 ease-out ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
       }`}
     >
       <div className="flex items-center gap-3 mb-8">
-        <span className="section-num">03</span>
+        <span className="section-num">04</span>
         <div className="h-px flex-1 bg-[#DCD4C0]" />
-        <span className="section-label">Skills</span>
+        <span className="section-label">Technologies</span>
       </div>
 
       <div className="flex flex-wrap gap-2">

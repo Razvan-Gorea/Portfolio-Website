@@ -1,8 +1,8 @@
-import "./App.css";
 import NavigationBar from "./components/NavigationBar";
 import MainHeader from "./components/MainHeader";
 import About from "./components/About";
 import Education from "./components/Education";
+import Certifications from "./components/Certifications";
 import Technologies from "./components/Technologies";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
@@ -44,14 +44,17 @@ function App() {
         {/* About / Education / Skills */}
         <div
           id="about"
-          className="grid grid-cols-1 lg:grid-cols-2 px-6 sm:px-12 md:px-20 lg:px-32"
+          className="section-px grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-8"
         >
-          <div className="lg:border-r border-[#DCD4C0] lg:pr-14">
+          <div className="lg:col-span-3">
             <About />
           </div>
-          <div className="lg:pl-14 flex flex-col gap-14 mt-14 lg:mt-0">
+          <div className="lg:col-span-2 flex flex-col gap-6">
             <Education />
-            <Technologies />
+            <Certifications />
+            <div id="technologies">
+              <Technologies />
+            </div>
           </div>
         </div>
 

@@ -39,12 +39,12 @@ function ScrollToNextButton() {
     <button
       onClick={scrollToNextSection}
       className="fixed bottom-7 left-1/2 -translate-x-1/2 z-50 glass-dark
-                 p-3 text-[#726C5C] hover:text-[#C1603C] hover:border-[#C1603C]
+                 p-5 text-[#726C5C] hover:text-[#C1603C] hover:border-[#C1603C]
                  transition-all duration-200 group"
       style={{ borderRadius: '2px' }}
       aria-label="Scroll to next section"
     >
-      <FaChevronDown className="w-3.5 h-3.5 group-hover:animate-bounce" />
+      <FaChevronDown className="w-7 h-7 group-hover:animate-bounce" />
     </button>
   );
 }

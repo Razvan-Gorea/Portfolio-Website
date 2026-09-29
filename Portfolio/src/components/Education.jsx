@@ -22,7 +22,7 @@ function Education() {
   return (
     <div
       ref={ref}
-      className={`flex flex-col transition-all duration-700 ease-out ${
+      className={`card flex flex-col transition-all duration-700 ease-out ${
         isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-6'
       }`}
     >
@@ -48,7 +48,7 @@ function Education() {
 
             <div className="flex-1 min-w-0">
               <div className="flex items-start justify-between gap-3">
-                <p className="text-[#14171C] responsive-text-base font-semibold leading-snug">
+                <p className="text-[#14171C] text-body font-semibold leading-snug">
                   {item.degree}
                 </p>
                 <span className="section-label whitespace-nowrap flex-shrink-0 pt-0.5">

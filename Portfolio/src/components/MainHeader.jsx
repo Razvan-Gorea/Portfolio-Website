@@ -50,7 +50,8 @@ function MainHeader() {
   return (
     <div
       ref={ref}
-      className="relative min-h-screen flex flex-col px-6 sm:px-12 md:px-20 lg:px-32 pt-24 sm:pt-15 pb-30"
+      className="relative min-h-screen flex flex-col section-px pb-30"
+      style={{ paddingTop: 'calc(var(--nav-height) + 2rem)' }}
     >
       {/* Terracotta atmospheric glow behind hero text */}
       <div className="hero-glow" aria-hidden="true" />
@@ -64,52 +65,52 @@ function MainHeader() {
         <div className="sep" />
       </div>
 
-      {/* Spacer pushes hero to lower half of viewport */}
-      <div className="flex-1" />
+      {/* Hero content, vertically centered in remaining space */}
+      <div className="flex-1 flex flex-col justify-center">
+        {/* Hero text */}
+        <div className="mb-8 sm:mb-10 relative z-10">
+          <p className="hero-text">
+            {nameText}
+            {!nameComplete && (
+              <span className="cursor-blink">_</span>
+            )}
+          </p>
+        </div>
 
-      {/* Hero text */}
-      <div className="mb-8 sm:mb-10 relative z-10">
-        <p className="hero-text">
-          {nameText}
-          {!nameComplete && (
-            <span className="cursor-blink">_</span>
-          )}
-        </p>
-      </div>
+        {/* Accent separator */}
+        <div className="sep-accent mb-5 sm:mb-6 relative z-10" />
 
-      {/* Accent separator */}
-      <div className="sep-accent mb-5 sm:mb-6 relative z-10" />
-
-      {/* Subtitle row */}
-      <div className="flex items-center justify-between gap-4 relative z-10">
-        <p
-          className="font-display font-semibold uppercase text-[#C1603C]"
-          style={{
-            fontSize: 'clamp(0.875rem, 2.2vw, 1.25rem)',
-            letterSpacing: '0.22em',
-          }}
-        >
-          {typewriterText}
-          {nameComplete && !scrollComplete && (
-            <span className="cursor-blink">_</span>
-          )}
-        </p>
-
-        <div className="flex items-center gap-2 flex-shrink-0">
-          <span
-            className="section-label"
-            style={{ color: scrollComplete ? '#14171C' : '#726C5C' }}
+        {/* Subtitle row */}
+        <div className="flex items-center justify-between gap-4 relative z-10">
+          <p
+            className="font-display font-semibold uppercase text-[#C1603C]"
+            style={{
+              fontSize: 'clamp(0.875rem, 2.2vw, 1.25rem)',
+              letterSpacing: '0.22em',
+            }}
           >
-            {scrollText}
-          </span>
-          {scrollComplete && (
+            {typewriterText}
+            {nameComplete && !scrollComplete && (
+              <span className="cursor-blink">_</span>
+            )}
+          </p>
+
+          <div className="flex items-center gap-2 flex-shrink-0">
             <span
-              className="animate-bounce text-[#C1603C] text-xs"
-              style={{ letterSpacing: '0.1em' }}
+              className="section-label"
+              style={{ color: scrollComplete ? '#14171C' : '#726C5C' }}
             >
-              ↓
+              {scrollText}
             </span>
-          )}
+            {scrollComplete && (
+              <span
+                className="animate-bounce text-[#C1603C] text-xs"
+                style={{ letterSpacing: '0.1em' }}
+              >
+                ↓
+              </span>
+            )}
+          </div>
         </div>
       </div>
     </div>

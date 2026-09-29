@@ -8,7 +8,7 @@ function About() {
   return (
     <div
       ref={ref}
-      className={`flex flex-col transition-all duration-700 ease-out ${
+      className={`card flex flex-col transition-all duration-700 ease-out ${
         isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-6'
       }`}
     >
@@ -21,13 +21,13 @@ function About() {
 
       {/* Bio */}
       <div className="space-y-5 mb-10">
-        <p className="text-[#52565D] responsive-text-lg leading-relaxed">
+        <p className="text-[#52565D] text-body-lg leading-relaxed">
           I'm a Computer Science graduate from Dublin City University, currently completing a{' '}
           <span className="text-[#14171C] font-medium">Master's in Artificial Intelligence</span>.
           I build full-stack applications and intelligent systems from React frontends and Python
           APIs to LLM-powered agents and ML pipelines.
         </p>
-        <p className="text-[#52565D] responsive-text-lg leading-relaxed">
+        <p className="text-[#52565D] text-body-lg leading-relaxed">
           I care about clean architecture, thoughtful UX, and software that solves real problems.
           Currently seeking graduate roles in{' '}
           <span className="text-[#14171C] font-medium">software engineering</span> or{' '}
@@ -86,7 +86,7 @@ function About() {
           </div>
           <div className="flex-1 min-w-0">
             <div className="flex items-start justify-between gap-3">
-              <p className="text-[#14171C] responsive-text-base font-semibold leading-snug">
+              <p className="text-[#14171C] text-body font-semibold leading-snug">
                 Software Developer
               </p>
               <span className="section-label whitespace-nowrap flex-shrink-0 pt-0.5">
@@ -108,7 +108,7 @@ function About() {
       </div>
 
       {/* Links */}
-      <div className="flex items-center gap-5 pb-14 lg:pb-0">
+      <div className="flex items-center gap-5">
         <a
           href="https://github.com/Razvan-Gorea"
           target="_blank"
